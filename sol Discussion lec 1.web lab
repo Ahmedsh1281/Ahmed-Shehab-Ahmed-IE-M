@@ -1,0 +1,57 @@
+Name:- Ahmed Shehab Ahmed
+Branch:- IT
+The Study:-morning
+sol Discussion lec 1
+1. What are the four tags required in every HTML page?
+The four tags required in every HTML page are:
+
+1- The <!DOCTYPE> tag, which declares the document type and the HTML version. This tag is not an HTML element, but it is required for HTML documents¹.
+
+2- The <html> tag, which represents the root of an HTML document. This tag is the container for all other HTML elements (except for the <!DOCTYPE> tag). 
+
+3- The <head> tag, which contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets¹.
+
+4- The <body> tag, which represents the content of an HTML document. There can be only one such element in a document.
+
+2. What is HTML emojis tags and write simple program to disply some emojis?
+HTML emojis are characters from the UTF-8 character set that are displayed as colorful icons in the browser.
+They represent things such as faces, weather, animals, and emotions. To use HTML emojis, you need to specify the character set in the <meta> tag 
+as UTF-8, and then use the corresponding code for each emoji. For example, the code for the grinning face emoji is \uD83D\uDE00, which can also
+be written as &#128512; or &#x1F600;⁴. Here is a simple program to display some emojis in HTML:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Emojis</title>
+</head>
+<body>
+  <h1>Some Emojis</h1>
+  <p>\uD83D\uDE00 \uD83D\uDE04 \uD83D\uDE0D \uD83D\uDC97</p>
+  <p>\uD83D\uDE80 \uD83D\uDE81 \uD83D\uDE82 \uD83D\uDE83 \uD83D\uDE84</p>
+  <p>\uD83D\uDC02 \uD83D\uDC03 \uD83D\uDC04 \uD83D\uDC05 \uD83D\uDC06</p>
+</body>
+</html>
+
+
+This program will display the following emojis:
+
+😀 😄 😍 💗
+🚀 🚁 🚂 🚃 🚄
+🐂 🐃 🐄 🐅 🐆
+
+3. Make a personal web. Type a few paragraphs to introduce yourself to the world and use the HTML  
+tags you’ve learned in this Experiment to make them into a web page?
+Here is an example of how you can introduce yourself to the world:
+
+`html
+<html>
+<head>
+    <title>My Personal Web Page</title>
+</head>
+<body>
+    <h1>Hi, I'm ahmed Shehab</h1>
+    <p>I'm a student at the University of technology in Baghdad, majoring in computer engineering. I love coding, learning new things, and solving problems.</p>
+    <p>Some of my hobbies are playing chess, reading books, and listening to music. </p>
+    <p>I'm also interested in artificial intelligence, especially natural language processing and computer vision. I hope to become a researcher in this field someday and contribute to the advancement of human knowledge.</p>
