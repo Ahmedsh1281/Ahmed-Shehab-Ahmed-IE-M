@@ -1,0 +1,58 @@
+Name:- Ahmed Shehab Ahmed
+Branch:- IT
+The Study:-morning
+sol Discussion lec 2
+
+Q/ Write html code to generate following outputs?
+
+Here is the HTML code that I have written for both sections A and B:
+
+html
+<!-- Section A: Write HTML code to generate following outputs. -->
+<ol>
+  <li>Apples</li>
+  <li>Pears</li>
+  <li>Citrus fruits
+    <ul>
+      <li>Oranges</li>
+      <li>Lemons</li>
+      <li>Grapefruits</li>
+    </ul>
+  </li>
+  <li>Bananas</li>
+  <li>Melons
+    <ul>
+      <li>Watermelons</li>
+      <li>Cantaloupes</li>
+      <li>Honeydews</li>
+    </ul>
+  </li>
+</ol>
+
+<!-- Section B: Write HTML code to generate following outputs. -->
+<table border="1">
+  <tr>
+    <th>No.</th>
+    <th>Full Name</th>
+    <th>Salary</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Bill Gates</td>
+    <td>$100,000,000</td>
+    <td>Founder of Microsoft</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Steve Jobs</td>
+    <td>$1</td>
+    <td>Founder of Apple</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Larry Page</td>
+    <td>$50,000,000</td>
+    <td>Founder of Google</td>
+  </tr>
+</table>
