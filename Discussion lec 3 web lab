@@ -1,0 +1,53 @@
+Q1 :- SOL 
+<form>
+  <h1>First Name</h1>
+  <input type="radio" id="mr" name="title" value="Mr.">
+  <label for="mr">Mr.</label>
+  <input type="radio" id="mrs" name="title" value="Mrs.">
+  <label for="mrs">Mrs.</label>
+  <input type="radio" id="ms" name="title" value="Ms.">
+  <label for="ms">Ms.</label>
+  <br>
+  <h1>Last Name</h1>
+  <input type="text" id="lname" name="lname" required>
+  <br>
+  <h1>Mail Address1</h1>
+  <input type="text" id="address1" name="address1" required>
+  <br>
+  <h1>Mail Address2</h1>
+  <input type="text" id="address2" name="address2">
+  <br>
+  <h1>City</h1>
+  <input type="text" id="city" name="city" required>
+  <br>
+  <h1>State</h1>
+  <input type="text" id="state" name="state" required>
+  <br>
+  <h1>Zip</h1>
+  <input type="number" id="zip" name="zip" required>
+  <br>
+  <h1>Upload Photo</h1>
+  <input type="file" id="photo" name="photo" accept="image/*">
+  <br>
+  <h1>E-Mail</h1>
+  <input type="email" id="email" name="email" required>
+  <br>
+  <h1>Mobile</h1>
+  <input type="tel" id="mobile" name="mobile" required>
+  <br>
+  <h1>Languages Known</h1>
+  <input type="checkbox" id="gujarati" name="language" value="Gujarati">
+  <label for="gujarati">Gujarati</label>
+  <input type="checkbox" id="hindi" name="language" value="Hindi">
+  <label for="hindi">Hindi</label>
+  <input type="checkbox" id="english" name="language" value="English">
+  <label for="english">English</label>
+  <input type="checkbox" id="marathi" name="language" value="Marathi">
+  <label for="marathi">Marathi</label>
+  <br>
+  <h1>Additional Information</h1>
+  <textarea id="info" name="info" rows="4" cols="50"></textarea>
+  <br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
