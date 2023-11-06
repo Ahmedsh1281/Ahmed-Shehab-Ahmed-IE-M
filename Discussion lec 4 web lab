@@ -1,0 +1,41 @@
+Ahmed Shehab Ahmed/ IT/M
+Discussion lec 4 web lab
+1-Not recommended to use tables for HTML layout, why?
+Sol :- There are several reasons why using tables for HTML layout is not recommended. Some of them are:
+
+- Tables are meant for displaying tabular data, not for layout. Using tables for layout goes against the semantic meaning of HTML elements and makes the code less readable and maintainable¹²³.
+- Tables make the web page less accessible for people who use screen readers or other assistive technologies. Tables can confuse the linear reading order and the logical structure of the content¹³⁴.
+- Tables increase the file size and loading time of the web page, as they require more markup and nested elements. Tables also prevent the progressive rendering of the page, as the browser has to wait for the entire table to load before displaying it¹²⁴.
+- Tables limit the flexibility and responsiveness of the web page, as they are fixed in their dimensions and alignment. Tables are harder to adapt to different screen sizes and devices than CSS-based layouts¹²⁴.
+
+Therefore, it is better to use CSS for layout, as it allows you to separate the content from the presentation, and to create more accessible, efficient, and adaptable web pages.
+#######################################################################################################################################################################################
+2- Sol:-
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Layout using Semantic Elements</title>
+</head>
+<body>
+<header>
+<h1>Front-End Development Course</h1>
+</header>
+<nav>
+<p><b>Main Menu</b></p>
+<ul style="list-style-type:none;">
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</nav>
+<main>
+<p>In this lab, students will study Front-End Development course</p>
+</main>
+<figure>
+<img src="1.jfif" alt="pic" style="width:50%">
+</figure>
+<footer>
+<p>Copyright © 2023 Web Programming LAB</p>
+</footer>
+</body>
+</html>
