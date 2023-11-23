@@ -1,0 +1,116 @@
+Discussion Lec5
+What are the limitations of CSS ?
+A: CSS is a style sheet language that allows web developers to control the appearance and layout of web pages. CSS has many advantages, such as saving time, improving consistency, enhancing accessibility, and enabling responsive design. However, CSS also has some limitations that web developers should be aware of. Some of the limitations of CSS are:
+
+- Browser compatibility: Different browsers may support different versions or features of CSS, which can cause inconsistencies or errors in the display of web pages. Web developers have to test their web pages across multiple browsers and use fallbacks or hacks to ensure compatibility¹².
+- Lack of security: CSS files are stored on the server and can be accessed by anyone who knows the URL. This means that anyone can view or modify the CSS code, which can affect the appearance or functionality of the web pages. Web developers have to use encryption or authentication methods to protect their CSS files from unauthorized access or tampering².
+- Complexity: CSS can be difficult to learn and master, especially for beginners or non-developers. CSS has different levels, syntax, selectors, properties, values, units, and functions that can be confusing or overwhelming. Web developers have to use proper coding standards, comments, and documentation to make their CSS code readable and maintainable.
+2. How many ways can a CSS be integrated as a web page?
+A: main ways to integrate CSS into a web page
+
+- Inline CSS: You can add CSS styles directly to an HTML element using the style attribute. For example:
+
+<p style="color: red;">This is a paragraph with inline CSS.</p>
+- Internal CSS: You can add CSS styles to the head section of an HTML document using the style tag. For example:
+
+<head>
+  <style>
+    p {
+      color: blue;
+    }
+  </style>
+</head>
+- External CSS: You can create a separate CSS file and link it to your HTML document using the link tag in the head section. For example:
+
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+Each way has its own advantages and disadvantages, depending on the situation and the purpose of the web page. You can also use multiple style sheets or import a CSS file inside another CSS file.
+3. Create a home page for a ressturant with what you’ve learned from HTML & CSS?
+A:
+<html>
+<head>
+  <title>My Restaurant</title>
+  <style>
+    /* Add some CSS styles for the web page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff0000;
+      font-size: 36px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0000ff;
+      font-size: 24px;
+    }
+
+    p {
+      text-align: justify;
+      margin: 20px;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 10px;
+      background-color: #cccccc;
+    }
+
+    .menu li {
+      font-weight: bold;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .menu li a:hover {
+      color: #ffffff;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>Welcome to My Restaurant</h1>
+    <h2>The best place to enjoy delicious food and drinks</h2>
+    <ul class="menu">
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Our Menu</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <p>My Restaurant is a family-owned business that has been serving the community for over 20 years. We offer a variety of dishes, from traditional to modern, from local to international, from vegetarian to meat-lovers. Whether you are looking for a quick bite, a romantic dinner, or a special occasion, we have something for everyone.</p>
+    <p>Our chefs use only the freshest ingredients and the finest spices to create mouth-watering meals that will satisfy your taste buds. Our staff are friendly and attentive, and will make you feel at home. Our atmosphere is cozy and inviting, and our prices are reasonable and affordable.</p>
+    <p>Come and visit us today and experience the difference. We are open from 10 a.m. to 10 p.m. every day. You can also order online or call us for delivery or takeout. We look forward to serving you soon.</p>
+    <div class="footer">
+     
+    </div>
+  </div>
+</body>
+</html>
