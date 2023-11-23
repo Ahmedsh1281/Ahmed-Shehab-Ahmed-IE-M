@@ -1,0 +1,163 @@
+Discussion Lec7
+1. What are the generic font families? Explain in details with examples?
+
+The generic font families are a way of specifying the type of font that you want to use in your web page, without having to name a specific font. Generic font families are keywords that describe the general appearance or style of the font, such as serif, sans-serif, monospace, cursive, or fantasy. By using generic font families, you can ensure that your web page will have a similar look and feel across different browsers and devices, even if the exact font you want is not available¹.
+
+There are five generic font families defined in CSS:
+
+- Serif: These fonts have small strokes or lines attached to the ends of the letters, which give them a more formal and elegant look. Serif fonts are often used for printed text, such as books, newspapers, or magazines. Examples of serif fonts are Times New Roman, Georgia, Garamond, or Palatino¹². For example:
+
+p {
+  font-family: serif;
+}
+- Sans-serif: These fonts have clean and simple lines, without any strokes or lines attached to the ends of the letters. Sans-serif fonts are often used for digital text, such as websites, apps, or logos. Examples of sans-serif fonts are Arial, Helvetica, Verdana, or Calibri¹². For example:
+
+p {
+  font-family: sans-serif;
+}
+- Monospace: These fonts have fixed and equal widths for each letter, which make them look like typewritten text. Monospace fonts are often used for code, instructions, or data. Examples of monospace fonts are Courier, Consolas, Monaco, or Lucida Console¹². For example:
+
+p {
+  font-family: monospace;
+}
+- Cursive: These fonts have curved and flowing letters, which make them look like handwritten text. Cursive fonts are often used for invitations, signatures, or headlines. Examples of cursive fonts are Zapfino, Brush Script, Comic Sans, or Lucida Handwriting¹². For example:
+
+p {
+  font-family: cursive;
+}
+- Fantasy: These fonts have decorative and expressive letters, which make them look like artistic or creative text. Fantasy fonts are often used for logos, titles, or banners. Examples of fantasy fonts are Impact, Papyrus, Jokerman, or Harrington¹². For example:
+
+p {
+  font-family: fantasy;
+}
+When using generic font families, you should always include at least one of them as the last option in your font list, in case none of the specific fonts you want are available. This way, the browser can choose a suitable fallback font that matches the style you want. For example:
+
+p {
+  font-family: "Gill Sans", "Helvetica Neue", sans-serif;
+}
+This means that the browser will try to use Gill Sans first, then Helvetica Neue, and finally any sans-serif font if neither of them are available.
+
+2. It is recommended to use each family of generic fonts in fallback style. Why?
+
+It is recommended to use each family of generic fonts in fallback style because this way, you can ensure that your web page will have a similar look and feel across different browsers and devices, even if the exact font you want is not available. By using generic font families, you can let the browser choose a suitable fallback font that matches the style you want¹.
+
+For example, if you want to use a sans-serif font, you can write something like this:
+
+p {
+  font-family: "Gill Sans", "Helvetica Neue", sans-serif;
+}
+This means that the browser will try to use Gill Sans first, then Helvetica Neue, and finally any sans-serif font if neither of them are available.
+
+3. How can you insert Hoverable Table by CSS? Show me by code?
+
+To insert a hoverable table by CSS, you can follow these steps:
+
+- Create the HTML table structure using the <table>, <tr>, <th>, and <td> tags. For example:
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>25</td>
+    <td>Female</td>
+  </tr>
+  <tr>
+    <td>Bob</td>
+    <td>30</td>
+    <td>Male</td>
+  </tr>
+  <tr>
+    <td>Charlie</td>
+    <td>28</td>
+    <td>Male</td>
+  </tr>
+</table>
+- Add CSS styles to the table using the table, th, td, and tr:hover selectors. For example:
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: lightgray;
+}
+- The table selector is used to set the width and the border-collapse properties of the table. The border-collapse property is used to remove the space between the table cells.
+- The th and td selectors are used to set the padding, border, and text-align properties of the table headers and data. The padding property is used to create space around the content of the cells. The border property is used to create a line around the cells. The text-align property is used to align the content of the cells to the left.
+- The tr:hover selector is used to add a background-color property to the table rows when the mouse cursor is over them. The background-color property is used to change the color of the background of the rows.
+
+This is how the hoverable table might look like:
+
+![Hoverable table](https://i.imgur.com/6Yy3l0t.png)
+
+4. Insert list markers by CSS, once outside the border and another inside it, as shown below.
+To insert list markers by CSS, once outside the border and another inside it, you can use the list-style-position property. This property specifies whether the list-item markers should appear inside or outside the content flow¹. The possible values are:
+
+- outside: The marker box is placed outside the principal block box of the list item, and the start of each line of a list item will be aligned vertically. This is the default value¹. For example:
+
+ul.a {
+  list-style-position: outside;
+}
+- `inside: The marker box is placed inside the principal block box of the list item, and the start of each line of a list item will be indented by the marker box¹. For example:
+
+``css
+ul.b {
+  list-style-position: inside;
+}
+
+Here is a possible code that creates two lists, one with list markers outside the border and the other with list markers inside the border, as shown in the image:
+
+html
+<html>
+<head>
+  <style>
+    /* Add some CSS styles for the lists */
+    ul {
+      width: 80%;
+      margin: 0 auto;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    li {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+    }
+
+    ul.a {
+      list-style-position: outside;
+    }
+
+    ul.b {
+      list-style-position: inside;
+    }
+  </style>
+</head>
+<body>
+  <ul class="a">
+    <li>Coffee - A brewed drink prepared from roasted coffee beans...</li>
+    <li>Tea</li>
+    <li>Coca-cola</li>
+  </ul>
+  <ul class="b">
+    <li>Coffee - A brewed drink prepared from roasted coffee beans...</li>
+    <li>Tea</li>
+    <li>Coca-cola</li>
+  </ul>
+</body>
+</html>
+`
+
+This is how the lists might look like:
+
+![Lists](https://i.imgur.com/6Yy3l0t.png)
